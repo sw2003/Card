@@ -11,9 +11,6 @@ def home_page():
 
 @app.route("/showcase", methods = ["POST"])
 def showcase():
-    print(request.form.get("passcode"))
-
-
     return render_template("showcase.html", passcode=request.form.get("passcode"))
 
 @app.route("/test",methods = ["POST"])
