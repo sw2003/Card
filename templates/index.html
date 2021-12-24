@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title> Merry Christmas</title> 
+        <meta charset="UTF-8"> 
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel ="stylesheet" href="{{url_for('static', filename='styles/index.css')}}">
+        <script src="{{url_for('static', filename='js/app.js')}}"> </script> 
+
+
+        <style> 
+            .label-text{
+                color: white;
+                font-size: 2vw;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class = "banner"> 
+            <form action ="/showcase" method = "post" class = "form" id ='passcode-form'>
+                <label for ="passcode" class = "label-text"> Enter your passcode</label> 
+                <input type = "text", name="passcode" id="passcode" class="form-control" autocomplete = "off"> 
+            </form>
+        </div>
+    </body> 
+</html>
